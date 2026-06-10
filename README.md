@@ -222,7 +222,6 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 - [@vue-vine/rsbuild-plugin](https://github.com/vue-vine/vue-vine): Rsbuild plugin for Vue Vine.
 - [@vizejs/rspack-plugin](https://github.com/ubugeeei/vize): High-Performance Vue.js Toolchain in Rust.
 
-
 #### For Preact
 
 - [@rsbuild/plugin-preact](https://rsbuild.rs/plugins/list/plugin-preact): Provides support for Preact.
@@ -446,7 +445,7 @@ Japanese blogs (日本語):
 - [2025-08] [Rails アプリケーションのフロントエンドを webpack から Rspack に移行しました](https://tech.synchro-food.co.jp/entry/2025/08/18/180000)
 - [2025-04] [Rspack に移行したらフロントエンドのビルドがめっちゃ速くなりました](https://buildersbox.corp-sansan.com/entry/2025/04/14/110000)
 - [2026-05] [Rsbuildで組むVueのVRMコンポーネント。ライセンスと配信の安全性を追求したライブラリ設計](https://qiita.com/logue/items/21bb239fed2c4f4a3b2f)
-- [2026-05] [なぜRsbuidスタックなのか？]([https://qiita.com/logue/items/21bb239fed2c4f4a3b2f](https://qiita.com/logue/items/e191ed56e922b33e4c8f))
+- [2026-05] [なぜRsbuidスタックなのか？](https://qiita.com/logue/items/e191ed56e922b33e4c8f)
 
 French blogs (Français):
 
