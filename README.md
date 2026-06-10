@@ -378,8 +378,6 @@ Rspack and Rsbuild support most of the [unplugin](https://github.com/unplugin), 
 - [rspackify](https://github.com/SyMind/rspackify): Experience lightning-fast builds by instantly switching from webpack to Rspack.
 - [Spinpack](https://github.com/denniscual/spinpack): A CLI tool that turbocharges the developer server experience for CRA projects with Rspack.
 - [Jetpack](https://github.com/KidkArolis/jetpack): Jetpack wraps Rspack to create a smoother developer experience.
-- [vue-vrm](https://github.com/logue/vue-vrm): VRM avatar component for vue powerd by Rslib.
-- 
 ## Blogs
 
 ### Rspack Team
