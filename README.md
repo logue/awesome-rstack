@@ -115,6 +115,7 @@ Upper-level frameworks or libraries that are powered by Rspack or connected to R
 - [@trapar-waves/vue-tailwind](https://github.com/Trapar-waves/vue-tailwind): A Vue 3 project with Tailwind CSS, Rsbuild and modern development tools.
 - [vue-nestjs-ssr-starter](https://github.com/pikadun/vue-nestjs-ssr-starter): A lightweight full-stack SSR starter with Vue 3, NestJS, Fastify, PrimeVue, and Rsbuild.
 - [react-nestjs-ssr-starter](https://github.com/pikadun/react-nestjs-ssr-starter): A lightweight full-stack starter for server-side rendering with NestJS and React.
+- [rsbuild-vue-starter](https://github.com/logue/rsbuild-vue-starter): A simple starter template using the Vue + Vue-router + Pinia stack. Includes built-in formatting with rslint and testing with rstest.
 
 ### Rslib Starter
 
@@ -220,6 +221,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 - [@mutsuntsai/rsbuild-plugin-vue-ssg](https://github.com/mutsuntsai/rsbuild-plugin-vue-ssg): Generate Vue SSG contents and inject those into HTML for Rsbuild.
 - [@vue-vine/rsbuild-plugin](https://github.com/vue-vine/vue-vine): Rsbuild plugin for Vue Vine.
 - [@vizejs/rspack-plugin](https://github.com/ubugeeei/vize): High-Performance Vue.js Toolchain in Rust.
+
 
 #### For Preact
 
@@ -377,7 +379,8 @@ Rspack and Rsbuild support most of the [unplugin](https://github.com/unplugin), 
 - [rspackify](https://github.com/SyMind/rspackify): Experience lightning-fast builds by instantly switching from webpack to Rspack.
 - [Spinpack](https://github.com/denniscual/spinpack): A CLI tool that turbocharges the developer server experience for CRA projects with Rspack.
 - [Jetpack](https://github.com/KidkArolis/jetpack): Jetpack wraps Rspack to create a smoother developer experience.
-
+- [vue-vrm](https://github.com/logue/vue-vrm): VRM avatar component for vue powerd by Rslib.
+- 
 ## Blogs
 
 ### Rspack Team
@@ -442,6 +445,8 @@ Japanese blogs (日本語):
 - [2025-11] [KARTEの分析システムのレガシーな開発環境を高速にする。pnpm, Rspackの導入で改善できたこと。](https://tech.plaid.co.jp/speedup-pnpm-rspack)
 - [2025-08] [Rails アプリケーションのフロントエンドを webpack から Rspack に移行しました](https://tech.synchro-food.co.jp/entry/2025/08/18/180000)
 - [2025-04] [Rspack に移行したらフロントエンドのビルドがめっちゃ速くなりました](https://buildersbox.corp-sansan.com/entry/2025/04/14/110000)
+- [2026-05] [Rsbuildで組むVueのVRMコンポーネント。ライセンスと配信の安全性を追求したライブラリ設計](https://qiita.com/logue/items/21bb239fed2c4f4a3b2f)
+- [2026-05] [なぜRsbuidスタックなのか？]([https://qiita.com/logue/items/21bb239fed2c4f4a3b2f](https://qiita.com/logue/items/e191ed56e922b33e4c8f))
 
 French blogs (Français):
 
