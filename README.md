@@ -160,7 +160,7 @@ Upper-level frameworks or libraries that are powered by Rspack or connected to R
 - [dotenv-webpack](https://github.com/mrsteele/dotenv-webpack): A secure plugin that supports dotenv and other environment variables.
 - [eslint-rspack-plugin](https://github.com/rstackjs/eslint-rspack-plugin): Rspack plugin to run ESLint checks during the compilation.
 - [ts-checker-rspack-plugin](https://github.com/rstackjs/ts-checker-rspack-plugin): Runs TypeScript type checker on a separate process.
-- [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin): Simplifies creation of HTML files to serve your bundles.
+- [html-rspack-plugin](https://github.com/rstackjs/html-rspack-plugin): Simplifies creation of HTML files to serve your bundles.
 - [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer): Visualize size of webpack output files with an interactive zoomable treemap.
 - [@vanilla-extract/webpack-plugin](https://github.com/vanilla-extract-css/vanilla-extract): Integrating vanilla-extract with webpack / Rspack.
 - [@sentry/webpack-plugin](https://github.com/getsentry/sentry-javascript-bundler-plugins): Provides source map and release management support for Sentry.
