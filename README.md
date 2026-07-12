@@ -178,7 +178,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 - [postcss-loader](https://github.com/webpack-contrib/postcss-loader): Loader to process CSS with PostCSS.
 - [style-loader](https://github.com/webpack-contrib/style-loader): Inject CSS into the DOM.
 - [html-loader](https://www.npmjs.com/package/html-loader): Exports HTML as string.
-- [vue-loader](https://github.com/vuejs/vue-loader): Loader for Vue Single-File Components.
+- [rspack-vue-loader](https://github.com/rstackjs/rspack-vue-loader): Vue loader for Rspack.
 - [svelte-loader](https://github.com/sveltejs/svelte-loader): Loader for svelte components.
 - [imports-loader](https://www.npmjs.com/package/imports-loader): Use modules that depend on specific global variables.
 - [source-map-loader](https://github.com/webpack-contrib/source-map-loader): Extracts source maps from existing source files.
