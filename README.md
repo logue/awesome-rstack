@@ -261,6 +261,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 - [@rsbuild/plugin-sass](https://rsbuild.rs/plugins/list/plugin-sass): Sass plugin for Rsbuild.
 - [@rsbuild/plugin-less](https://rsbuild.rs/plugins/list/plugin-less): Less plugin for Rsbuild.
 - [@rsbuild/plugin-stylus](https://rsbuild.rs/plugins/list/plugin-stylus): Use Stylus as the CSS preprocessor.
+- [@rsbuild/plugin-tailwindcss](https://rsbuild.rs/plugins/list/plugin-tailwindcss): Integrates Tailwind CSS v4 in Rsbuild.
 - [@rsbuild/plugin-check-syntax](https://github.com/rstackjs/rsbuild-plugin-check-syntax): Used to analyze the syntax compatibility of artifacts, to see if there are any advanced syntaxes that may cause compatibility issues.
 - [@rsbuild/plugin-css-minimizer](https://github.com/rstackjs/rsbuild-plugin-css-minimizer): Used to customize CSS minimizer, switch to [cssnano](https://cssnano.co/) or other tools for CSS compression.
 - [@rsbuild/plugin-typed-css-modules](https://github.com/rstackjs/rsbuild-plugin-typed-css-modules): Generate TypeScript declaration files for CSS Modules.
