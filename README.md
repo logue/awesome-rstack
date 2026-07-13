@@ -19,6 +19,7 @@
   - [Rsbuild Plugins](#rsbuild-plugins)
   - [Rspress Plugins](#rspress-plugins)
   - [Unplugin](#unplugin)
+- [Rstest Adapters](#rstest-adapters)
 - [Deployment](#deployment)
 - [Libraries](#libraries)
 - [Blogs](#blogs)
@@ -376,6 +377,13 @@ Rspack and Rsbuild support most of the [unplugin](https://github.com/unplugin), 
 - [unplugin-icons](https://github.com/unplugin/unplugin-icons): Access thousands of icons as components on-demand universally.
 - [unplugin-favicons](https://github.com/anolilab/unplugin-favicons): Generate favicons for your project with caching for blazing fast rebuilds.
 - [unplugin-macros](https://github.com/unplugin/unplugin-macros): Macros plugin for bundlers.
+
+## Rstest Adapters
+
+- [@rstest/adapter-rspack](https://github.com/web-infra-dev/rstest/tree/main/packages/adapter-rspack): Rstest adapter for Rspack configuration.
+- [@rstest/adapter-rsbuild](https://github.com/web-infra-dev/rstest/tree/main/packages/adapter-rsbuild): Rstest adapter for Rsbuild configuration.
+- [@rstest/adapter-rslib](https://github.com/web-infra-dev/rstest/tree/main/packages/adapter-rslib): Rstest adapter for Rslib configuration.
+- [@modern-js/adapter-rstest](https://github.com/web-infra-dev/modern.js/tree/main/packages/cli/adapter-rstest): Rstest adapter for Modern.js configuration.
 
 ## Deployment
 
