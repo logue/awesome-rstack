@@ -164,6 +164,7 @@ Upper-level frameworks or libraries that are powered by Rspack or connected to R
 - [eslint-rspack-plugin](https://github.com/rstackjs/eslint-rspack-plugin): Rspack plugin to run ESLint checks during the compilation.
 - [ts-checker-rspack-plugin](https://github.com/rstackjs/ts-checker-rspack-plugin): Runs TypeScript type checker on a separate process.
 - [html-rspack-plugin](https://github.com/rstackjs/html-rspack-plugin): Simplifies creation of HTML files to serve your bundles.
+- [node-polyfill-webpack-plugin](https://github.com/Richienb/node-polyfill-webpack-plugin): Polyfill Node.js core modules.
 - [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer): Visualize size of webpack output files with an interactive zoomable treemap.
 - [webpackbar](https://github.com/unjs/webpackbar): Elegant ProgressBar and Profiler for Rspack.
 - [@unocss/webpack](https://github.com/unocss/unocss/tree/main/packages-integrations/webpack): Plugin for UnoCSS.
