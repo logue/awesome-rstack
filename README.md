@@ -173,7 +173,6 @@ Upper-level frameworks or libraries that are powered by Rspack or connected to R
 - [@sentry/webpack-plugin](https://github.com/getsentry/sentry-javascript-bundler-plugins): Provides source map and release management support for Sentry.
 - [@serwist/webpack-plugin](https://github.com/serwist/serwist): generate a manifest of local files for progressive web apps.
 - [@vue-devtools-rstack/rspack](https://github.com/OskarLebuda/vue-devtools-rstack/tree/main/packages/rspack): Integrates Vue DevTools with raw Rspack setups, with feature parity with `vite-plugin-vue-devtools`.
-- [zod-compiler](https://github.com/gajus/zod-compiler): Compile Zod schemas into zero-overhead validation functions at build time.
 
 ### Rspack Loaders
 
@@ -385,6 +384,7 @@ Rspack and Rsbuild support most of the [unplugin](https://github.com/unplugin), 
 - [unplugin-icons](https://github.com/unplugin/unplugin-icons): Access thousands of icons as components on-demand universally.
 - [unplugin-favicons](https://github.com/anolilab/unplugin-favicons): Generate favicons for your project with caching for blazing fast rebuilds.
 - [unplugin-macros](https://github.com/unplugin/unplugin-macros): Macros plugin for bundlers.
+- [zod-compiler](https://github.com/gajus/zod-compiler): Compile Zod schemas into zero-overhead validation functions at build time.
 
 ## Rstest Adapters
 
