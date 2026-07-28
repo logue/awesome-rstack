@@ -173,6 +173,7 @@ Upper-level frameworks or libraries that are powered by Rspack or connected to R
 - [@sentry/webpack-plugin](https://github.com/getsentry/sentry-javascript-bundler-plugins): Provides source map and release management support for Sentry.
 - [@serwist/webpack-plugin](https://github.com/serwist/serwist): generate a manifest of local files for progressive web apps.
 - [@vue-devtools-rstack/rspack](https://github.com/OskarLebuda/vue-devtools-rstack/tree/main/packages/rspack): Integrates Vue DevTools with raw Rspack setups, with feature parity with `vite-plugin-vue-devtools`.
+- [@octanejs/rspack-plugin](https://octanejs.dev/docs/build-tools#rspack): Rspack loader and compiler plugin for Octane TSRX source.
 
 ### Rspack Loaders
 
@@ -319,6 +320,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 - [rsbuild-plugin-oxlint](https://github.com/robertpanvip/rsbuild-plugin-lint/tree/main/packages/oxlint): Plugin for Integrating Oxlint into the Rsbuild Build Process.
 - [rsbuild-plugin-rslint](https://github.com/robertpanvip/rsbuild-plugin-lint/tree/main/packages/rslint): Plugin for Integrating Rslint into the Rsbuild Build Process.
 - [rsbuild-plugin-biome](https://github.com/robertpanvip/rsbuild-plugin-lint/tree/main/packages/biome): Plugin for Integrating Biome into the Rsbuild Build Process.
+- [@octanejs/rsbuild-plugin](https://octanejs.dev/docs/build-tools#rsbuild): Rsbuild metaframework plugin for Octane, including routing, SSR, hydration, and production builds.
 
 ### Rspress Plugins
 
