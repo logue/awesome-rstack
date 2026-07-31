@@ -19,6 +19,7 @@
   - [Rsbuild Plugins](#rsbuild-plugins)
   - [Rspress Plugins](#rspress-plugins)
   - [Unplugin](#unplugin)
+- [Rstest Adapters](#rstest-adapters)
 - [Deployment](#deployment)
 - [Libraries](#libraries)
 - [Blogs](#blogs)
@@ -146,9 +147,11 @@ Upper-level frameworks or libraries that are powered by Rspack or connected to R
 - [rspack-plugin-svg-sprite](https://github.com/yichenzhu1337/rspack-plugin-svg-sprite): SVG sprite plugin for Rspack — drop-in replacement for svg-sprite-loader.
 - [typia-rspack-plugin](https://github.com/colinaaa/typia-rspack-plugin): A Rspack plugin for `typia` - TypeScript transformer for runtime type checking and validation.
 - [sonda](https://github.com/filipsobol/sonda): Visualizer and analyzer for JavaScript and CSS bundles.
+- [@rsdoctor/rspack-plugin](https://github.com/web-infra-dev/rsdoctor/tree/main/packages/rspack-plugin): An Rspack plugin for integrating Rsdoctor.
 - [rspack-deno-plugin](https://github.com/LonelySnowman/rspack-deno-plugin): Make Rspack run correctly in the deno environment.
 - [rspack-circular-dependency-plugin](https://github.com/Sunny-117/rspack-circular-dependency-plugin): Detect circular dependencies in modules compiled with Rspack.
 - [@nx/module-federation](https://nx.dev/nx-api/module-federation/documents/nx-module-federation-plugin): Includes several Rspack plugins for Nx and Module Federation.
+- [@module-federation/enhanced](https://github.com/module-federation/core/tree/main/packages/enhanced): Provides enhanced features for Module Federation.
 - [zephyr-rspack-plugin](https://www.npmjs.com/package/zephyr-rspack-plugin): An Rspack plugin for deploying applications with Zephyr Cloud.
 - [rspack-s3-plugin](https://github.com/ts-codeworks/rspack-s3-plugin): A Rspack plugin for uploading compiled assets to Amazon S3 after build.
 - [compression-rspack-plugin](https://github.com/ramon-villain/compression-rspack-plugin): Rust-native parallel compression plugin for Rspack. Drop-in replacement for compression-webpack-plugin with gzip, brotli, deflate, and deflateRaw — all parallelized across CPU cores via Rust + rayon.
@@ -158,13 +161,20 @@ Upper-level frameworks or libraries that are powered by Rspack or connected to R
 - [compression-webpack-plugin](https://github.com/webpack-contrib/compression-webpack-plugin): Prepare compressed versions of assets to serve them with Content-Encoding.
 - [css-minimizer-webpack-plugin](https://github.com/webpack-contrib/css-minimizer-webpack-plugin): Uses cssnano to optimize and minify your CSS.
 - [dotenv-webpack](https://github.com/mrsteele/dotenv-webpack): A secure plugin that supports dotenv and other environment variables.
-- [eslint-webpack-plugin](https://github.com/webpack-contrib/eslint-webpack-plugin): Uses eslint to find and fix problems in your JavaScript code.
+- [eslint-rspack-plugin](https://github.com/rstackjs/eslint-rspack-plugin): Rspack plugin to run ESLint checks during the compilation.
 - [ts-checker-rspack-plugin](https://github.com/rstackjs/ts-checker-rspack-plugin): Runs TypeScript type checker on a separate process.
-- [html-webpack-plugin](https://github.com/jantimon/html-webpack-plugin): Simplifies creation of HTML files to serve your bundles.
+- [html-rspack-plugin](https://github.com/rstackjs/html-rspack-plugin): Simplifies creation of HTML files to serve your bundles.
+- [node-polyfill-webpack-plugin](https://github.com/Richienb/node-polyfill-webpack-plugin): Polyfill Node.js core modules.
 - [webpack-bundle-analyzer](https://github.com/webpack-contrib/webpack-bundle-analyzer): Visualize size of webpack output files with an interactive zoomable treemap.
+- [webpackbar](https://github.com/unjs/webpackbar): Elegant ProgressBar and Profiler for Rspack.
+- [@unocss/webpack](https://github.com/unocss/unocss/tree/main/packages-integrations/webpack): Plugin for UnoCSS.
 - [@vanilla-extract/webpack-plugin](https://github.com/vanilla-extract-css/vanilla-extract): Integrating vanilla-extract with webpack / Rspack.
+- [@datadog/rspack-plugin](https://github.com/DataDog/build-plugins): A Rspack plugin to interact with Datadog from your builds.
 - [@sentry/webpack-plugin](https://github.com/getsentry/sentry-javascript-bundler-plugins): Provides source map and release management support for Sentry.
 - [@serwist/webpack-plugin](https://github.com/serwist/serwist): generate a manifest of local files for progressive web apps.
+- [@vue-devtools-rstack/rspack](https://github.com/OskarLebuda/vue-devtools-rstack/tree/main/packages/rspack): Integrates Vue DevTools with raw Rspack setups, with feature parity with `vite-plugin-vue-devtools`.
+- [@octanejs/rspack-plugin](https://octanejs.dev/docs/build-tools#rspack): Rspack loader and compiler plugin for Octane TSRX source.
+- [@golar-rstack/rspack](https://github.com/OskarLebuda/golar-rstack-plugin/tree/main/packages/rspack): Runs golar type checking and type-aware linting in a separate process as an Rspack plugin.
 
 ### Rspack Loaders
 
@@ -178,7 +188,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 - [postcss-loader](https://github.com/webpack-contrib/postcss-loader): Loader to process CSS with PostCSS.
 - [style-loader](https://github.com/webpack-contrib/style-loader): Inject CSS into the DOM.
 - [html-loader](https://www.npmjs.com/package/html-loader): Exports HTML as string.
-- [vue-loader](https://github.com/vuejs/vue-loader): Loader for Vue Single-File Components.
+- [rspack-vue-loader](https://github.com/rstackjs/rspack-vue-loader): Vue loader for Rspack.
 - [svelte-loader](https://github.com/sveltejs/svelte-loader): Loader for svelte components.
 - [imports-loader](https://www.npmjs.com/package/imports-loader): Use modules that depend on specific global variables.
 - [source-map-loader](https://github.com/webpack-contrib/source-map-loader): Extracts source maps from existing source files.
@@ -214,6 +224,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 - [@rsbuild/plugin-vue-jsx](https://github.com/rstackjs/rsbuild-plugin-vue-jsx): Provides support for Vue 3 JSX / TSX syntax.
 - [@rsbuild/plugin-vue2](https://github.com/rstackjs/rsbuild-plugin-vue2): Provides support for Vue 2 SFC (Single File Components).
 - [@rsbuild/plugin-vue2-jsx](https://github.com/rstackjs/rsbuild-plugin-vue2-jsx): Provides support for Vue 2 JSX / TSX syntax.
+- [@vue-devtools-rstack/rsbuild](https://github.com/OskarLebuda/vue-devtools-rstack/tree/main/packages/rsbuild): Integrates Vue DevTools with Rsbuild, with feature parity with `vite-plugin-vue-devtools`.
 - [rsbuild-plugin-unplugin-vue](https://github.com/rstackjs/rsbuild-plugin-unplugin-vue): Integrates `unplugin-vue` for Vue SFC compilation.
 - [rsbuild-plugin-vue-inspector](https://github.com/hunghg255/rsbuild-plugin-vue-inspector): Allows automatic jumping to the local IDE when clicking on a browser element.
 - [rsbuild-plugin-vue-legacy](https://github.com/skymoonya/rsbuild-plugin-vue-legacy): Support for Vue versions below 2.7 by setting an alias for `vue`.
@@ -252,7 +263,10 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 - [@rsbuild/plugin-mdx](https://github.com/rstackjs/rsbuild-plugin-mdx): Provide support for MDX.
 - [@rsbuild/plugin-node-polyfill](https://github.com/rstackjs/rsbuild-plugin-node-polyfill): Used to inject polyfills of Node core modules in the browser side.
 - [@rsbuild/plugin-source-build](https://github.com/rstackjs/rsbuild-plugin-source-build): This plugin is designed for the monorepo scenario. It supports referencing source code from other subdirectories and performs build and hot update.
+- [@rsbuild/plugin-sass](https://rsbuild.rs/plugins/list/plugin-sass): Sass plugin for Rsbuild.
+- [@rsbuild/plugin-less](https://rsbuild.rs/plugins/list/plugin-less): Less plugin for Rsbuild.
 - [@rsbuild/plugin-stylus](https://rsbuild.rs/plugins/list/plugin-stylus): Use Stylus as the CSS preprocessor.
+- [@rsbuild/plugin-tailwindcss](https://rsbuild.rs/plugins/list/plugin-tailwindcss): Integrates Tailwind CSS v4 in Rsbuild.
 - [@rsbuild/plugin-check-syntax](https://github.com/rstackjs/rsbuild-plugin-check-syntax): Used to analyze the syntax compatibility of artifacts, to see if there are any advanced syntaxes that may cause compatibility issues.
 - [@rsbuild/plugin-css-minimizer](https://github.com/rstackjs/rsbuild-plugin-css-minimizer): Used to customize CSS minimizer, switch to [cssnano](https://cssnano.co/) or other tools for CSS compression.
 - [@rsbuild/plugin-typed-css-modules](https://github.com/rstackjs/rsbuild-plugin-typed-css-modules): Generate TypeScript declaration files for CSS Modules.
@@ -304,6 +318,11 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 - [rsbuild-plugin-compression](https://github.com/s-r-x/rsbuild-plugin-compression): Compress the assets using gzip, brotli or zstd.
 - [rsbuild-plugin-pwa](https://github.com/s-r-x/rsbuild-plugin-pwa): Zero-config PWA support for rsbuild
 - [@plugin-cra-proxy/rsbuild](https://github.com/robertpanvip/plugin-cra-proxy/tree/main/packages/rsbuild): A development proxy plugin for Rsbuild, mimicking Create React App proxy behavior.
+- [rsbuild-plugin-oxlint](https://github.com/robertpanvip/rsbuild-plugin-lint/tree/main/packages/oxlint): Plugin for Integrating Oxlint into the Rsbuild Build Process.
+- [rsbuild-plugin-rslint](https://github.com/robertpanvip/rsbuild-plugin-lint/tree/main/packages/rslint): Plugin for Integrating Rslint into the Rsbuild Build Process.
+- [rsbuild-plugin-biome](https://github.com/robertpanvip/rsbuild-plugin-lint/tree/main/packages/biome): Plugin for Integrating Biome into the Rsbuild Build Process.
+- [@octanejs/rsbuild-plugin](https://octanejs.dev/docs/build-tools#rsbuild): Rsbuild metaframework plugin for Octane, including routing, SSR, hydration, and production builds.
+- [@golar-rstack/rsbuild](https://github.com/OskarLebuda/golar-rstack-plugin/tree/main/packages/rsbuild): Runs golar type checking and type-aware linting in a separate process as an Rsbuild plugin.
 
 ### Rspress Plugins
 
@@ -344,6 +363,7 @@ Rspack and Rsbuild support most of the webpack loaders, such as:
 - [rspress-plugin-auto-sidebar](https://github.com/buyfakett/rspress-plugin-auto-sidebar): Automatically generate the sidebar from the navbar configuration.
 - [rspress-plugin-giscus](https://github.com/buyfakett/rspress-plugin-giscus): Integrate [giscus](https://github.com/giscus/giscus) into Rspress, a comment system powered by GitHub Discussions.
 - [rspress-plugin-blog-list](https://github.com/buyfakett/rspress-plugin-blog-list): Integrate blog list into Rspress.
+- [rspress-plugin-pdf-generator](https://github.com/MaxtuneLee/rspress-plugin-pdf-generator): Generates multi-language single-page or multi-page PDF documents from Rspress site during build process.
 
 ### Unplugin
 
@@ -351,19 +371,32 @@ Rspack and Rsbuild support most of the [unplugin](https://github.com/unplugin), 
 
 - [unplugin-vue](https://www.npmjs.com/package/unplugin-vue): Transform Vue 3 SFC to JavaScript.
 - [unplugin-vue-components](https://github.com/unplugin/unplugin-vue-components): On-demand components auto importing for Vue.
+- [unplugin-element-plus](https://github.com/element-plus/unplugin-element-plus): Import Element Plus on demand.
 - [unplugin-auto-import](https://github.com/unplugin/unplugin-auto-import): Auto import APIs on-demand.
-- [unplugin-stylex](https://github.com/eryue0220/unplugin-stylex): StyleX integration for Rspack.
+- [@stylexjs/unplugin](https://www.npmjs.com/package/@stylexjs/unplugin): Universal bundler plugin for StyleX.
 - [@arco-plugins/unplugin-react](https://www.npmjs.com/package/@arco-plugins/unplugin-react): A plugin to help you use Arco Design React.
 - [@tanstack/router-plugin](https://www.npmjs.com/package/@tanstack/router-plugin): Automatically generate configuration for TanStack Router.
 - [unplugin-build-info](https://github.com/renzp94/unplugin-build-info): Print the build information on the console.
+- [unplugin-info](https://github.com/yjl9903/unplugin-info): Export build information as a virtual module.
+- [unplugin-turbo-console](https://github.com/unplugin/unplugin-turbo-console): Improve the Developer Experience of console.
 - [unplugin-vue-macros](https://github.com/vue-macros/vue-macros): Explore more macros and syntax sugar to Vue.
 - [unplugin-inject-preload](https://github.com/Applelo/unplugin-inject-preload): Inject `<link rel="preload">` to your index.html based on your build assets. Need to be used with HTMLWebpackPlugin or HTMLRspackPlugin.
 - [@intlify/unplugin-vue-i18n](https://github.com/intlify/bundle-tools/tree/main/packages/unplugin-vue-i18n): unplugin for Vue I18n.
+- [@formatjs/unplugin](https://www.npmjs.com/package/@formatjs/unplugin): Universal build plugin for FormatJS.
+- [unplugin-ast](https://github.com/unplugin/unplugin-ast): Manipulate the AST to transform your code.
 - [unplugin-build-meta](https://github.com/luxass/unplugin-build-meta): Import build metadata into your JavaScript/TypeScript projects.
 - [unplugin-dts](https://github.com/qmhc/unplugin-dts): An unplugin that generates declaration files (\*.d.ts).
 - [unplugin-icons](https://github.com/unplugin/unplugin-icons): Access thousands of icons as components on-demand universally.
 - [unplugin-favicons](https://github.com/anolilab/unplugin-favicons): Generate favicons for your project with caching for blazing fast rebuilds.
 - [unplugin-macros](https://github.com/unplugin/unplugin-macros): Macros plugin for bundlers.
+- [zod-compiler](https://github.com/gajus/zod-compiler): Compile Zod schemas into zero-overhead validation functions at build time.
+
+## Rstest Adapters
+
+- [@rstest/adapter-rspack](https://github.com/web-infra-dev/rstest/tree/main/packages/adapter-rspack): Rstest adapter for Rspack configuration.
+- [@rstest/adapter-rsbuild](https://github.com/web-infra-dev/rstest/tree/main/packages/adapter-rsbuild): Rstest adapter for Rsbuild configuration.
+- [@rstest/adapter-rslib](https://github.com/web-infra-dev/rstest/tree/main/packages/adapter-rslib): Rstest adapter for Rslib configuration.
+- [@modern-js/adapter-rstest](https://github.com/web-infra-dev/modern.js/tree/main/packages/cli/adapter-rstest): Rstest adapter for Modern.js configuration.
 
 ## Deployment
 
@@ -372,8 +405,11 @@ Rspack and Rsbuild support most of the [unplugin](https://github.com/unplugin), 
 ## Libraries
 
 - [@rspack/dev-server](https://github.com/web-infra-dev/rspack-dev-server): Dev server for Rspack, provides the same API as webpack-dev-server.
+- [@rspack/dev-middleware](https://github.com/rstackjs/rspack-dev-middleware): A development middleware for Rspack.
+- [@rspack/resolver](https://github.com/rstackjs/rspack-resolver): A Rust port of enhanced-resolve.
 - [@rspack/lite-tapable](https://github.com/rstackjs/rspack-lite-tapable): Lite weight tapable for Rspack.
 - [rspack-chain](https://github.com/rstackjs/rspack-chain): A chaining API to generate and simplify the modification of Rspack configurations.
+- [rspack-merge](https://github.com/rstackjs/rspack-merge): Smart configuration merging for Rspack.
 - [Sails Shipwright](https://github.com/sailshq/sails-hook-shipwright) - The modern asset pipeline for [Sails](https://sailsjs.com) powered by Rsbuild.
 - [rspackify](https://github.com/SyMind/rspackify): Experience lightning-fast builds by instantly switching from webpack to Rspack.
 - [Spinpack](https://github.com/denniscual/spinpack): A CLI tool that turbocharges the developer server experience for CRA projects with Rspack.
